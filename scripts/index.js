@@ -19,7 +19,6 @@ progressSettings(minValue);
 
 function progressSettings(endValue) {
   progressValue = endValue;
-  // заменить тут на серый
   progressBar.style.background = `conic-gradient(
     blue ${endValue * 3.6}deg,
     #eff3f6 ${endValue * 3.6}deg 
@@ -43,7 +42,6 @@ function animateHandler() {
 
 function inputHandler() {
   progressValue = minValue;
-
   idIntervalInput = setInterval(() => {
     progressValue++;
 
