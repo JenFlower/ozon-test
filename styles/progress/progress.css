@@ -10,6 +10,7 @@
   border-radius: 50%;
   display: grid;
   place-items: center;
+  background-color: linear-gradient(blue, #eff3f6);
 }
 
 .progress-bar:before {
