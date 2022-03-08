@@ -1,0 +1,30 @@
+.wrapper {
+  height: calc(100% - 32.7px);
+  display: grid;
+}
+
+@media screen and (orientation: portrait) {
+  .wrapper {
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  .wrapper .progress {
+    align-items: center;
+    justify-items: center;
+  }
+
+  .wrapper .actions {
+    align-items: center;
+    justify-items: flex-start;
+    justify-content:center;
+    height: max-content;
+  }
+}
+
+@media screen and (orientation: landscape) {
+  .wrapper {
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+  }
+}

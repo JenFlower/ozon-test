@@ -1,0 +1,19 @@
+.actions {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  gap: 15px;
+  font-size: 16px;
+}
+
+@media screen and (orientation: portrait) {
+  .actions {
+    margin-top: 20px;
+  }
+}
+
+@media screen and (orientation: landscape) {
+  .actions {
+    margin: 0 20px;
+    height: 150px;
+  }
+}

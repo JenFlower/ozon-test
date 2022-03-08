@@ -1,12 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/index.css" />
+    <title>Progress</title>
+  </head>
+  <body class="body">
+    <h1 class="title">Progress</h1>
+    <div class="wrapper">
+      <div class="progress">
+        <div class="progress-bar" id="progress"></div>
+      </div>
+      <div class="actions">
+        <div class="block-action">
+          <input
+            class="block-action__input-value"
+            id="value-progress"
+            type="number"
+            min="0"
+            max="100"
+          />
+          <span class="block-action__title">Value</span>
+        </div>
+        <div class="block-action">
+          <label class="block-action__switch">
+            <input class="block-action__input" id="animate" type="checkbox" />
+            <span class="block-action__slider block-action__round"></span>
+          </label>
+          <span class="block-action__title">Animate</span>
+        </div>
+        <div class="block-action">
+          <label class="block-action__switch">
+            <input class="block-action__input" id="hide" type="checkbox" />
+            <span class="block-action__slider block-action__round"></span>
+          </label>
+          <span class="block-action__title">Hide</span>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="module" src="/scripts/index.js"></script>
 </html>
